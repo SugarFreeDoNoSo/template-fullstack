@@ -11,11 +11,7 @@ Crear un monorepo NX con:
 
 ## 📝 TODO
 
-### 2. Crear workspace NX y estructura inicial
-- [ ] Inicializar workspace NX con preset de aplicaciones TypeScript
-- [ ] Crear apps: `api` (NestJS) y `web` (NextJS)
-- [ ] Crear libs: `shared-types`, `trpc-config`
-- **Herramienta principal**: `terminal`
+
 
 ### 3. Configurar aplicación NestJS con Fastify
 - [ ] Instalar dependencias: @nestjs/platform-fastify, @nestjs/typeorm, typeorm, pg
@@ -39,17 +35,23 @@ Crear un monorepo NX con:
 
 ## 🔄 IN PROGRESS
 
-### 1. Configurar DevContainer con PostgreSQL y Redis
-- [ ] Crear `.devcontainer/devcontainer.json` y `docker-compose.yml`
-- [ ] Configurar PostgreSQL (puerto 5432) y Redis (puerto 6379)
-- [ ] Incluir extensiones VS Code para desarrollo
-- **Herramienta principal**: `edit_file`
+### 2. Crear workspace NX y estructura inicial
+- [ ] Inicializar workspace NX con preset de aplicaciones TypeScript
+- [ ] Crear apps: `api` (NestJS) y `web` (NextJS)
+- [ ] Crear libs: `shared-types`, `trpc-config`
+- **Herramienta principal**: `terminal`
 
 ---
 
 ## ✅ DONE
 
-_No hay tareas completadas aún_
+### 1. Configurar DevContainer con PostgreSQL y Redis
+- [x] Crear `.devcontainer/devcontainer.json` y `docker-compose.yml`
+- [x] Configurar PostgreSQL (puerto 5432) y Redis (puerto 6379)
+- [x] Incluir extensiones VS Code para desarrollo
+- **Herramienta principal**: `edit_file`
+- **Commit**: `47f6463` - feat: configure DevContainer with PostgreSQL and Redis
+- **Documentación**: `docs/iteraciones/tarea_1_iteracion_1.md`
 
 ---
 

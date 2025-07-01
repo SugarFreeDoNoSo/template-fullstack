@@ -187,3 +187,10 @@ $RECYCLE.BIN/
 .directory
 .Trash-*
 .nfs*
+
+.nx/installation
+.nx/workspace-data
+
+
+.cursor/rules/nx-rules.mdc
+.github/instructions/nx.instructions.md
