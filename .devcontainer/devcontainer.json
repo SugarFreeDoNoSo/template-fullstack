@@ -1,0 +1,55 @@
+{
+  "name": "NX Monorepo - NestJS + NextJS + tRPC",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-next",
+        "ms-azuretools.vscode-docker",
+        "ckolkman.vscode-postgres",
+        "bradlc.vscode-tailwindcss",
+        "nrwl.angular-console",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.vscode-json",
+        "redhat.vscode-yaml",
+        "ms-vscode-remote.remote-containers",
+        "ms-vscode.vscode-jest",
+        "bradlc.vscode-tailwindcss",
+        "formulahendry.auto-rename-tag",
+        "christian-kohler.path-intellisense"
+      ],
+      "settings": {
+        "typescript.preferences.noSemicolons": "on",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit"
+        },
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "forwardPorts": [3000, 3001, 5432, 6379],
+  "portsAttributes": {
+    "3000": {
+      "label": "NextJS Frontend",
+      "onAutoForward": "notify"
+    },
+    "3001": {
+      "label": "NestJS API",
+      "onAutoForward": "notify"
+    },
+    "5432": {
+      "label": "PostgreSQL"
+    },
+    "6379": {
+      "label": "Redis"
+    }
+  },
+  "postCreateCommand": "npm install",
+  "remoteUser": "node"
+}
