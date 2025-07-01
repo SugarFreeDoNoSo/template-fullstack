@@ -11,12 +11,6 @@ Crear un monorepo NX con:
 
 ## 📝 TODO
 
-### 4. Configurar aplicación NextJS 15 con shadcn
-- [ ] Instalar y configurar shadcn/ui en el proyecto NextJS
-- [ ] Configurar Tailwind CSS y tema base
-- [ ] Crear layout básico de la aplicación
-- **Herramienta principal**: `terminal` + `edit_file`
-
 ### 5. Definir modelo Service y tipos compartidos
 - [ ] Crear entidad TypeORM Service en `libs/shared-types`
 - [ ] Definir schemas Zod para validación
@@ -27,11 +21,11 @@ Crear un monorepo NX con:
 
 ## 🔄 IN PROGRESS
 
-### 3. Configurar aplicación NestJS con Fastify
-- [ ] Instalar dependencias: @nestjs/platform-fastify, @nestjs/typeorm, typeorm, pg
-- [ ] Configurar main.ts para usar FastifyAdapter
-- [ ] Configurar módulo de base de datos con TypeORM
-- **Herramienta principal**: `edit_file`
+### 4. Configurar aplicación NextJS 15 con shadcn
+- [ ] Instalar y configurar shadcn/ui en el proyecto NextJS
+- [ ] Configurar Tailwind CSS y tema base
+- [ ] Crear layout básico de la aplicación
+- **Herramienta principal**: `terminal` + `edit_file`
 
 ---
 
@@ -52,6 +46,14 @@ Crear un monorepo NX con:
 - **Herramienta principal**: `terminal`
 - **Commit**: `25e4f63` - feat: create NX workspace with NestJS API and NextJS web apps
 - **Documentación**: `docs/iteraciones/tarea_2_iteracion_1.md`
+
+### 3. Configurar aplicación NestJS con Fastify
+- [x] Instalar dependencias: @nestjs/platform-fastify, @nestjs/typeorm, typeorm, pg
+- [x] Configurar main.ts para usar FastifyAdapter
+- [x] Configurar módulo de base de datos con TypeORM
+- **Herramienta principal**: `edit_file`
+- **Commit**: `2cb280e` - feat: configure NestJS with Fastify and TypeORM
+- **Documentación**: `docs/iteraciones/tarea_3_iteracion_1.md`
 
 ---
 
