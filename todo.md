@@ -11,14 +11,6 @@ Crear un monorepo NX con:
 
 ## 📝 TODO
 
-
-
-### 3. Configurar aplicación NestJS con Fastify
-- [ ] Instalar dependencias: @nestjs/platform-fastify, @nestjs/typeorm, typeorm, pg
-- [ ] Configurar main.ts para usar FastifyAdapter
-- [ ] Configurar módulo de base de datos con TypeORM
-- **Herramienta principal**: `edit_file`
-
 ### 4. Configurar aplicación NextJS 15 con shadcn
 - [ ] Instalar y configurar shadcn/ui en el proyecto NextJS
 - [ ] Configurar Tailwind CSS y tema base
@@ -35,11 +27,11 @@ Crear un monorepo NX con:
 
 ## 🔄 IN PROGRESS
 
-### 2. Crear workspace NX y estructura inicial
-- [ ] Inicializar workspace NX con preset de aplicaciones TypeScript
-- [ ] Crear apps: `api` (NestJS) y `web` (NextJS)
-- [ ] Crear libs: `shared-types`, `trpc-config`
-- **Herramienta principal**: `terminal`
+### 3. Configurar aplicación NestJS con Fastify
+- [ ] Instalar dependencias: @nestjs/platform-fastify, @nestjs/typeorm, typeorm, pg
+- [ ] Configurar main.ts para usar FastifyAdapter
+- [ ] Configurar módulo de base de datos con TypeORM
+- **Herramienta principal**: `edit_file`
 
 ---
 
@@ -52,6 +44,14 @@ Crear un monorepo NX con:
 - **Herramienta principal**: `edit_file`
 - **Commit**: `47f6463` - feat: configure DevContainer with PostgreSQL and Redis
 - **Documentación**: `docs/iteraciones/tarea_1_iteracion_1.md`
+
+### 2. Crear workspace NX y estructura inicial
+- [x] Inicializar workspace NX con preset de aplicaciones TypeScript
+- [x] Crear apps: `api` (NestJS) y `web` (NextJS)
+- [x] Crear libs: `shared-types`, `trpc-config`
+- **Herramienta principal**: `terminal`
+- **Commit**: `25e4f63` - feat: create NX workspace with NestJS API and NextJS web apps
+- **Documentación**: `docs/iteraciones/tarea_2_iteracion_1.md`
 
 ---
 
