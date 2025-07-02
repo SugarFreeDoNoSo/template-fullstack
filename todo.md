@@ -11,21 +11,15 @@ Crear un monorepo NX con:
 
 ## 📝 TODO
 
+---
+
+## 🔄 IN PROGRESS
+
 ### 5. Definir modelo Service y tipos compartidos
 - [ ] Crear entidad TypeORM Service en `libs/shared-types`
 - [ ] Definir schemas Zod para validación
 - [ ] Configurar exports de la librería
 - **Herramienta principal**: `edit_file`
-
----
-
-## 🔄 IN PROGRESS
-
-### 4. Configurar aplicación NextJS 15 con shadcn
-- [ ] Instalar y configurar shadcn/ui en el proyecto NextJS
-- [ ] Configurar Tailwind CSS y tema base
-- [ ] Crear layout básico de la aplicación
-- **Herramienta principal**: `terminal` + `edit_file`
 
 ---
 
@@ -54,6 +48,14 @@ Crear un monorepo NX con:
 - **Herramienta principal**: `edit_file`
 - **Commit**: `2cb280e` - feat: configure NestJS with Fastify and TypeORM
 - **Documentación**: `docs/iteraciones/tarea_3_iteracion_1.md`
+
+### 4. Configurar aplicación NextJS 15 con shadcn
+- [x] Instalar y configurar shadcn/ui en el proyecto NextJS
+- [x] Configurar Tailwind CSS y tema base
+- [x] Crear layout básico de la aplicación
+- **Herramienta principal**: `terminal` + `edit_file`
+- **Commit**: `7060ba4` - feat: configure NextJS 15 with shadcn/ui and Tailwind CSS
+- **Documentación**: `docs/iteraciones/tarea_4_iteracion_1.md`
 
 ---
 
