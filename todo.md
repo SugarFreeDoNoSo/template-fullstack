@@ -124,11 +124,10 @@ Crear un monorepo NX con:
 - [x] Documentar requisitos y stack tecnológico
 - [x] Crear guía de instalación y configuración
 - [x] Documentar API endpoints y procedures tRPC
-- [ ] Agregar capturas de pantalla del dashboard (pendiente hasta completar UI)
 - [x] Crear troubleshooting y FAQ
 - **Herramienta principal**: `edit_file`
-- **Commit**: Pendiente - docs: create comprehensive README with project documentation
-- **Documentación**: README.md completo creado
+- **Commit**: Incluido en el commit de la tarea 12.
+- **Documentación**: `README.md`
 
 ### 12. Configurar Docker y despliegue en contenedores
 - [x] Crear Dockerfile para aplicación NestJS API
@@ -139,8 +138,8 @@ Crear un monorepo NX con:
 - [x] Crear scripts de build y deploy
 - [x] Documentar proceso de despliegue
 - **Herramienta principal**: `edit_file` + `terminal`
-- **Commit**: Pendiente - feat: configure Docker deployment with production-ready stack
-- **Documentación**: Pendiente - `docs/iteraciones/tarea_12_iteracion_1.md`
+- **Commit**: `b4c2b9f` - feat: configure Docker deployment with production-ready stack
+- **Documentación**: `docs/iteraciones/tarea_12_iteracion_1.md`
 
 ---
 
