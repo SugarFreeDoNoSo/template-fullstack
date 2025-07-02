@@ -11,6 +11,51 @@ Crear un monorepo NX con:
 
 ## 📝 TODO
 
+### 7. Crear migración de base de datos y configurar entorno de desarrollo
+- [ ] Crear migración TypeORM para tabla services
+- [ ] Configurar script de inicialización de base de datos
+- [ ] Crear datos de prueba (seeders) para desarrollo
+- [ ] Configurar variables de entorno para diferentes ambientes
+- [ ] Validar conexiones PostgreSQL y Redis en DevContainer
+- **Herramienta principal**: `terminal` + `edit_file`
+
+### 8. Configurar tRPC client en Frontend NextJS
+- [ ] Instalar dependencias tRPC client y React Query
+- [ ] Configurar tRPC provider en app layout
+- [ ] Crear hooks personalizados para procedures CRUD
+- [ ] Configurar error handling y loading states
+- [ ] Implementar utilidades para manejo de fechas con date-fns
+- **Herramienta principal**: `edit_file` + `terminal`
+
+### 9. Crear componentes de Dashboard y formularios CRUD
+- [ ] Diseñar layout principal del dashboard con shadcn/ui
+- [ ] Crear formulario para crear/editar servicios
+- [ ] Implementar tabla de servicios con paginación y filtros
+- [ ] Agregar modal de confirmación para eliminar servicios
+- [ ] Crear componentes reutilizables (ServiceCard, ServiceForm, etc.)
+- [ ] Implementar validación client-side con Zod
+- **Herramienta principal**: `edit_file`
+
+### 10. Implementar gráficos del dashboard con Recharts
+- [ ] Instalar y configurar Recharts
+- [ ] Crear gráfico de pie: servicios por estado
+- [ ] Crear gráfico de barras: servicios por estado
+- [ ] Crear gráfico de línea: servicios por día (últimos 5 días hábiles)
+- [ ] Implementar componente de métricas y KPIs
+- [ ] Agregar responsive design para móviles
+- **Herramienta principal**: `edit_file`
+
+
+
+### 13. Testing end-to-end y optimizaciones finales
+- [ ] Configurar Playwright o Cypress para e2e testing
+- [ ] Crear tests para flujos principales del dashboard
+- [ ] Optimizar performance del frontend (lazy loading, memoization)
+- [ ] Configurar linting y formateo del código
+- [ ] Crear CI/CD pipeline básico
+- [ ] Validar accesibilidad y UX
+- **Herramienta principal**: `edit_file` + `terminal`
+
 ---
 
 ## 🔄 IN PROGRESS
@@ -71,8 +116,31 @@ Crear un monorepo NX con:
 - [x] Crear controlador tRPC para NestJS con manejo de errores
 - [x] Configurar módulos Redis, Service y tRPC en AppModule
 - **Herramienta principal**: `edit_file` + `terminal`
-- **Commit**: Pendiente - feat: configure tRPC router with NestJS integration and Redis cache
-- **Documentación**: Pendiente - `docs/iteraciones/tarea_6_iteracion_1.md`
+- **Commit**: `e917961` - feat: configure tRPC router with NestJS integration and Redis cache
+- **Documentación**: `docs/iteraciones/tarea_6_iteracion_1.md`
+
+### 11. Crear README completo y documentación del proyecto
+- [x] Escribir README.md con descripción del proyecto
+- [x] Documentar requisitos y stack tecnológico
+- [x] Crear guía de instalación y configuración
+- [x] Documentar API endpoints y procedures tRPC
+- [ ] Agregar capturas de pantalla del dashboard (pendiente hasta completar UI)
+- [x] Crear troubleshooting y FAQ
+- **Herramienta principal**: `edit_file`
+- **Commit**: Pendiente - docs: create comprehensive README with project documentation
+- **Documentación**: README.md completo creado
+
+### 12. Configurar Docker y despliegue en contenedores
+- [x] Crear Dockerfile para aplicación NestJS API
+- [x] Crear Dockerfile para aplicación NextJS
+- [x] Configurar docker-compose.yml para stack completo
+- [x] Crear nginx.conf para reverse proxy
+- [x] Configurar variables de entorno para producción
+- [x] Crear scripts de build y deploy
+- [x] Documentar proceso de despliegue
+- **Herramienta principal**: `edit_file` + `terminal`
+- **Commit**: Pendiente - feat: configure Docker deployment with production-ready stack
+- **Documentación**: Pendiente - `docs/iteraciones/tarea_12_iteracion_1.md`
 
 ---
 
@@ -92,7 +160,7 @@ Service {
 ## 🎨 Funcionalidades del Dashboard
 - CRUD completo de servicios
 - Gráfico pie: Servicios por estado
-- Gráfico barra: Servicios por estado  
+- Gráfico barra: Servicios por estado
 - Gráfico línea/barra: Servicios por día (últimos 5 días hábiles)
 - Cache Redis para operaciones GET
 

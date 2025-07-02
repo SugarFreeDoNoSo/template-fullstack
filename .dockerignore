@@ -1,0 +1,165 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+coverage/
+
+# Cache directories
+.cache/
+.nx/cache/
+.nx/workspace-data/
+.turbo/
+
+# Logs
+logs/
+*.log
+*.log.*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Dependencies lock files (we copy them separately)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment files (security)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Documentation
+README.md
+CHANGELOG.md
+LICENSE
+*.md
+docs/
+documentation/
+
+# Development tools
+.eslintrc*
+.prettierrc*
+.prettierignore
+.editorconfig
+.nvmrc
+
+# Testing
+__tests__/
+**/*.test.ts
+**/*.test.js
+**/*.spec.ts
+**/*.spec.js
+jest.config.*
+cypress/
+e2e/
+test/
+tests/
+
+# Docker files (prevent recursion)
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Deployment and CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+deployment/
+scripts/
+Jenkinsfile
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+backups/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Development artifacts
+*.tgz
+*.tar.gz
+.nyc_output/
+coverage/
+.coverage/
+
+# Temporary files
+tmp/
+temp/
+*.temp
+*.tmp
+
+# Local development files
+.env.example
+.env.sample
+docker-compose.override.yml
+docker-compose.dev.yml
+
+# Monitoring and analytics
+.next/trace
+.vercel/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Build reports and analysis
+bundle-analyzer/
+build-report-*.json
+deployment-report-*.json
+*.log
+
+# Context files from the project (these are for development)
+contexto/
+docs/iteraciones/
+
+# Keep only essential files for build
+!package.json
+!nx.json
+!tsconfig.base.json
+!*/project.json
+!*/tsconfig*.json
+!api/src/
+!web/src/
+!shared-types/src/
+!trpc-config/src/
