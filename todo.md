@@ -58,8 +58,21 @@ Crear un monorepo NX con:
 - [x] Implementar enum ServiceStatus con valores: pending, completed, cancelled
 - [x] Crear pruebas TDD completas para entidad y schemas
 - **Herramienta principal**: `edit_file`
-- **Commit**: Pendiente - feat: implement Service entity with TypeORM and Zod schemas
-- **Documentación**: Pendiente - `docs/iteraciones/tarea_5_iteracion_1.md`
+- **Commit**: `fcc05a0` - feat: implement Service entity with TypeORM and Zod schemas
+- **Documentación**: `docs/iteraciones/tarea_5_iteracion_1.md`
+
+### 6. Configurar tRPC router y conectar con NestJS + TypeORM
+- [x] Configurar tRPC router en `trpc-config` con procedures CRUD
+- [x] Integrar Service entity con TypeORM en NestJS con ServiceModule
+- [x] Configurar conexión PostgreSQL y Redis para cache
+- [x] Implementar procedures: createService, getServices, getService, updateService, deleteService
+- [x] Configurar Redis para cache de operaciones GET con invalidación automática
+- [x] Crear pruebas TDD para procedures tRPC (22/22 pruebas pasando)
+- [x] Crear controlador tRPC para NestJS con manejo de errores
+- [x] Configurar módulos Redis, Service y tRPC en AppModule
+- **Herramienta principal**: `edit_file` + `terminal`
+- **Commit**: Pendiente - feat: configure tRPC router with NestJS integration and Redis cache
+- **Documentación**: Pendiente - `docs/iteraciones/tarea_6_iteracion_1.md`
 
 ---
 
