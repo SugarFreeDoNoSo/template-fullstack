@@ -15,12 +15,6 @@ Crear un monorepo NX con:
 
 ## 🔄 IN PROGRESS
 
-### 5. Definir modelo Service y tipos compartidos
-- [ ] Crear entidad TypeORM Service en `libs/shared-types`
-- [ ] Definir schemas Zod para validación
-- [ ] Configurar exports de la librería
-- **Herramienta principal**: `edit_file`
-
 ---
 
 ## ✅ DONE
@@ -56,6 +50,16 @@ Crear un monorepo NX con:
 - **Herramienta principal**: `terminal` + `edit_file`
 - **Commit**: `7060ba4` - feat: configure NextJS 15 with shadcn/ui and Tailwind CSS
 - **Documentación**: `docs/iteraciones/tarea_4_iteracion_1.md`
+
+### 5. Definir modelo Service y tipos compartidos
+- [x] Crear entidad TypeORM Service en `shared-types`
+- [x] Definir schemas Zod para validación (create, update, response)
+- [x] Configurar exports de la librería con tipos TypeScript
+- [x] Implementar enum ServiceStatus con valores: pending, completed, cancelled
+- [x] Crear pruebas TDD completas para entidad y schemas
+- **Herramienta principal**: `edit_file`
+- **Commit**: Pendiente - feat: implement Service entity with TypeORM and Zod schemas
+- **Documentación**: Pendiente - `docs/iteraciones/tarea_5_iteracion_1.md`
 
 ---
 
