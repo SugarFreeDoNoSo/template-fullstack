@@ -12,11 +12,11 @@ Crear un monorepo NX con:
 ## 📝 TODO
 
 ### 7. Crear migración de base de datos y configurar entorno de desarrollo
-- [ ] Crear migración TypeORM para tabla services
-- [ ] Configurar script de inicialización de base de datos
-- [ ] Crear datos de prueba (seeders) para desarrollo
-- [ ] Configurar variables de entorno para diferentes ambientes
-- [ ] Validar conexiones PostgreSQL y Redis en DevContainer
+- [x] Crear migración TypeORM para tabla services
+- [x] Configurar script de inicialización de base de datos
+- [x] Crear datos de prueba (seeders) para desarrollo
+- [x] Configurar variables de entorno para diferentes ambientes
+- [x] Validar conexiones PostgreSQL y Redis en DevContainer
 - **Herramienta principal**: `terminal` + `edit_file`
 
 ### 8. Configurar tRPC client en Frontend NextJS
@@ -55,6 +55,11 @@ Crear un monorepo NX con:
 - [ ] Crear CI/CD pipeline básico
 - [ ] Validar accesibilidad y UX
 - **Herramienta principal**: `edit_file` + `terminal`
+
+### 14. Normalizar ejecuciones con package.json
+- [ ] Crear scripts en `package.json` para iniciar base de datos, correr migraciones y seeders
+- [ ] Documentar en README el uso de estos scripts
+- **Herramienta principal**: `edit_file`
 
 ---
 
@@ -140,6 +145,16 @@ Crear un monorepo NX con:
 - **Herramienta principal**: `edit_file` + `terminal`
 - **Commit**: `b4c2b9f` - feat: configure Docker deployment with production-ready stack
 - **Documentación**: `docs/iteraciones/tarea_12_iteracion_1.md`
+
+### 7. Crear migración de base de datos y configurar entorno de desarrollo
+- [x] Crear migración TypeORM para tabla services
+- [x] Configurar script de inicialización de base de datos
+- [x] Crear datos de prueba (seeders) para desarrollo
+- [x] Configurar variables de entorno para diferentes ambientes
+- [x] Validar conexiones PostgreSQL y Redis en DevContainer
+- **Herramienta principal**: `terminal` + `edit_file`
+- **Commit**: `e012543` - feat: add database migration and dev environment scripts
+- **Documentación**: `docs/iteraciones/tarea_7_iteracion_1.md`
 
 ---
 
