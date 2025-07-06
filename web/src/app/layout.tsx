@@ -1,4 +1,5 @@
 import { ThemeProvider } from '@/components/theme-provider';
+import { TrpcProvider } from '../trpc/provider';
 import './globals.css';
 
 export const metadata = {
@@ -15,14 +16,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+        <TrpcProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+        </TrpcProvider>
       </body>
     </html>
   );
