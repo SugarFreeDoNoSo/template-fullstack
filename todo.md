@@ -11,36 +11,7 @@ Crear un monorepo NX con:
 
 ## 📝 TODO
 
-### 7. Crear migración de base de datos y configurar entorno de desarrollo
-- [x] Crear migración TypeORM para tabla services
-- [x] Configurar script de inicialización de base de datos
-- [x] Crear datos de prueba (seeders) para desarrollo
-- [x] Configurar variables de entorno para diferentes ambientes
-- [x] Validar conexiones PostgreSQL y Redis en DevContainer
-- **Herramienta principal**: `terminal` + `edit_file`
-
-- [x] Diseñar layout principal del dashboard con shadcn/ui
-- [x] Crear formulario para crear/editar servicios
-- [x] Implementar tabla de servicios con paginación y filtros
-- [x] Agregar modal de confirmación para eliminar servicios
-- [x] Crear componentes reutilizables (ServiceCard, ServiceForm, etc.)
-- [x] Implementar validación client-side con Zod
-- **Herramienta principal**: `edit_file`
-
-
-### 13. Testing end-to-end y optimizaciones finales
-- [ ] Configurar Playwright o Cypress para e2e testing
-- [ ] Crear tests para flujos principales del dashboard
-- [ ] Optimizar performance del frontend (lazy loading, memoization)
-- [ ] Configurar linting y formateo del código
-- [ ] Crear CI/CD pipeline básico
-- [ ] Validar accesibilidad y UX
-- **Herramienta principal**: `edit_file` + `terminal`
-
-### 14. Normalizar ejecuciones con package.json
-- [ ] Crear scripts en `package.json` para iniciar base de datos, correr migraciones y seeders
-- [ ] Documentar en README el uso de estos scripts
-- **Herramienta principal**: `edit_file`
+No hay tareas pendientes.
 ---
 ## ✅ DONE
 
@@ -99,6 +70,45 @@ Crear un monorepo NX con:
 - **Commit**: `e917961` - feat: configure tRPC router with NestJS integration and Redis cache
 - **Documentación**: `docs/iteraciones/tarea_6_iteracion_1.md`
 
+### 7. Crear migración de base de datos y configurar entorno de desarrollo
+- [x] Crear migración TypeORM para tabla services
+- [x] Configurar script de inicialización de base de datos
+- [x] Crear datos de prueba (seeders) para desarrollo
+- [x] Configurar variables de entorno para diferentes ambientes
+- [x] Validar conexiones PostgreSQL y Redis en DevContainer
+- **Herramienta principal**: `terminal` + `edit_file`
+- **Commit**: `e012543` - feat: add database migration and dev environment scripts
+- **Documentación**: `docs/iteraciones/tarea_7_iteracion_1.md`
+
+### 8. Configurar tRPC client en Frontend NextJS
+- [x] Instalar dependencias tRPC client y React Query
+- [x] Configurar tRPC provider en app layout
+- [x] Crear hooks personalizados para procedures CRUD
+- [x] Configurar error handling y loading states
+- [x] Implementar utilidades para manejo de fechas con date-fns
+- **Herramienta principal**: `edit_file` + `terminal`
+- **Commit**: `f02641a` - feat: configure trpc client and add date utils
+- **Documentación**: `docs/iteraciones/tarea_8_iteracion_1.md`
+
+### 9. Crear componentes de Dashboard y formularios CRUD
+- [x] Diseñar layout principal del dashboard con shadcn/ui
+- [x] Crear formulario para crear/editar servicios
+- [x] Implementar tabla de servicios con paginación y filtros
+- [x] Agregar modal de confirmación para eliminar servicios
+- [x] Crear componentes reutilizables (ServiceCard, ServiceForm, etc.)
+- [x] Implementar validación client-side con Zod
+- **Herramienta principal**: `edit_file`
+
+### 10. Implementar gráficos del dashboard con Recharts
+- [x] Instalar y configurar Recharts
+- [x] Crear gráfico de pie: servicios por estado
+- [x] Crear gráfico de barras: servicios por estado
+- [x] Crear gráfico de línea: servicios por día (últimos 5 días hábiles)
+- [x] Implementar componente de métricas y KPIs
+- [x] Agregar responsive design para móviles
+- **Herramienta principal**: `edit_file`
+- **Documentación**: `docs/iteraciones/tarea_10_iteracion_1.md`
+
 ### 11. Crear README completo y documentación del proyecto
 - [x] Escribir README.md con descripción del proyecto
 - [x] Documentar requisitos y stack tecnológico
@@ -121,35 +131,19 @@ Crear un monorepo NX con:
 - **Commit**: `b4c2b9f` - feat: configure Docker deployment with production-ready stack
 - **Documentación**: `docs/iteraciones/tarea_12_iteracion_1.md`
 
-### 7. Crear migración de base de datos y configurar entorno de desarrollo
-- [x] Crear migración TypeORM para tabla services
-- [x] Configurar script de inicialización de base de datos
-- [x] Crear datos de prueba (seeders) para desarrollo
-- [x] Configurar variables de entorno para diferentes ambientes
-- [x] Validar conexiones PostgreSQL y Redis en DevContainer
-- **Herramienta principal**: `terminal` + `edit_file`
-- **Commit**: `e012543` - feat: add database migration and dev environment scripts
-- **Documentación**: `docs/iteraciones/tarea_7_iteracion_1.md`
-
-### 8. Configurar tRPC client en Frontend NextJS
-- [x] Instalar dependencias tRPC client y React Query
-- [x] Configurar tRPC provider en app layout
-- [x] Crear hooks personalizados para procedures CRUD
-- [x] Configurar error handling y loading states
-- [x] Implementar utilidades para manejo de fechas con date-fns
+### 13. Testing end-to-end y optimizaciones finales
+- [x] Configurar Playwright o Cypress para e2e testing
+- [x] Crear tests para flujos principales del dashboard
+- [x] Optimizar performance del frontend (lazy loading, memoization)
+- [x] Configurar linting y formateo del código
+- [x] Crear CI/CD pipeline básico
+- [x] Validar accesibilidad y UX
 - **Herramienta principal**: `edit_file` + `terminal`
-- **Commit**: `f02641a` - feat: configure trpc client and add date utils
-- **Documentación**: `docs/iteraciones/tarea_8_iteracion_1.md`
 
-### 10. Implementar gráficos del dashboard con Recharts
-- [x] Instalar y configurar Recharts
-- [x] Crear gráfico de pie: servicios por estado
-- [x] Crear gráfico de barras: servicios por estado
-- [x] Crear gráfico de línea: servicios por día (últimos 5 días hábiles)
-- [x] Implementar componente de métricas y KPIs
-- [x] Agregar responsive design para móviles
+### 14. Normalizar ejecuciones con package.json
+- [x] Crear scripts en `package.json` para iniciar base de datos, correr migraciones y seeders
+- [x] Documentar en README el uso de estos scripts
 - **Herramienta principal**: `edit_file`
-- **Documentación**: `docs/iteraciones/tarea_10_iteracion_1.md`
 
 ---
 

@@ -1,10 +1,11 @@
 "use client";
+import { memo } from 'react';
 import { useGetServices } from '@/hooks/useServices';
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, Cell } from 'recharts';
 
 const COLORS = ['#10b981', '#3b82f6', '#ef4444'];
 
-export default function ServiceStatusBar() {
+function ServiceStatusBarComponent() {
   const { data: services = [] } = useGetServices();
   const counts = {
     completed: services.filter((s) => s.status === 'completed').length,
@@ -28,3 +29,5 @@ export default function ServiceStatusBar() {
     </ResponsiveContainer>
   );
 }
+
+export default memo(ServiceStatusBarComponent);
