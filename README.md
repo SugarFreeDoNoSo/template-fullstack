@@ -273,6 +273,11 @@ npm run format          # Prettier en todo el proyecto
 npx nx graph            # Visualizar dependencias del proyecto
 npx nx affected:test    # Tests solo en código modificado
 
+# Scripts de base de datos
+npm run db:init         # Inicializa la base de datos con init-db.sql
+npm run db:migrate      # Ejecuta migraciones TypeORM
+npm run db:seed         # Inserta datos de ejemplo
+
 # Scripts de producción
 ./scripts/build.sh       # Build optimizado para producción
 ./scripts/deploy.sh      # Deploy con Docker Compose

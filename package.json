@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "db:init": "bash scripts/init-db.sh",
+    "db:migrate": "ts-node scripts/run-migrations.ts",
+    "db:seed": "ts-node scripts/seed-dev.ts"
   },
   "devDependencies": {
     "@eslint/compat": "^1.1.1",
@@ -85,5 +88,6 @@
     "typeorm": "^0.3.25",
     "zod": "^3.25.67",
     "date-fns": "^3.6.0"
+    ,"recharts": "^2.8.0"
   }
 }
