@@ -19,24 +19,13 @@ Crear un monorepo NX con:
 - [x] Validar conexiones PostgreSQL y Redis en DevContainer
 - **Herramienta principal**: `terminal` + `edit_file`
 
-### 9. Crear componentes de Dashboard y formularios CRUD
-- [ ] Diseñar layout principal del dashboard con shadcn/ui
-- [ ] Crear formulario para crear/editar servicios
-- [ ] Implementar tabla de servicios con paginación y filtros
-- [ ] Agregar modal de confirmación para eliminar servicios
-- [ ] Crear componentes reutilizables (ServiceCard, ServiceForm, etc.)
-- [ ] Implementar validación client-side con Zod
+- [x] Diseñar layout principal del dashboard con shadcn/ui
+- [x] Crear formulario para crear/editar servicios
+- [x] Implementar tabla de servicios con paginación y filtros
+- [x] Agregar modal de confirmación para eliminar servicios
+- [x] Crear componentes reutilizables (ServiceCard, ServiceForm, etc.)
+- [x] Implementar validación client-side con Zod
 - **Herramienta principal**: `edit_file`
-
-### 10. Implementar gráficos del dashboard con Recharts
-- [ ] Instalar y configurar Recharts
-- [ ] Crear gráfico de pie: servicios por estado
-- [ ] Crear gráfico de barras: servicios por estado
-- [ ] Crear gráfico de línea: servicios por día (últimos 5 días hábiles)
-- [ ] Implementar componente de métricas y KPIs
-- [ ] Agregar responsive design para móviles
-- **Herramienta principal**: `edit_file`
-
 
 
 ### 13. Testing end-to-end y optimizaciones finales
@@ -52,13 +41,7 @@ Crear un monorepo NX con:
 - [ ] Crear scripts en `package.json` para iniciar base de datos, correr migraciones y seeders
 - [ ] Documentar en README el uso de estos scripts
 - **Herramienta principal**: `edit_file`
-
 ---
-
-## 🔄 IN PROGRESS
-
----
-
 ## ✅ DONE
 
 ### 1. Configurar DevContainer con PostgreSQL y Redis
@@ -157,6 +140,16 @@ Crear un monorepo NX con:
 - **Herramienta principal**: `edit_file` + `terminal`
 - **Commit**: `f02641a` - feat: configure trpc client and add date utils
 - **Documentación**: `docs/iteraciones/tarea_8_iteracion_1.md`
+
+### 10. Implementar gráficos del dashboard con Recharts
+- [x] Instalar y configurar Recharts
+- [x] Crear gráfico de pie: servicios por estado
+- [x] Crear gráfico de barras: servicios por estado
+- [x] Crear gráfico de línea: servicios por día (últimos 5 días hábiles)
+- [x] Implementar componente de métricas y KPIs
+- [x] Agregar responsive design para móviles
+- **Herramienta principal**: `edit_file`
+- **Documentación**: `docs/iteraciones/tarea_10_iteracion_1.md`
 
 ---
 
