@@ -19,14 +19,6 @@ Crear un monorepo NX con:
 - [x] Validar conexiones PostgreSQL y Redis en DevContainer
 - **Herramienta principal**: `terminal` + `edit_file`
 
-### 8. Configurar tRPC client en Frontend NextJS
-- [ ] Instalar dependencias tRPC client y React Query
-- [ ] Configurar tRPC provider en app layout
-- [ ] Crear hooks personalizados para procedures CRUD
-- [ ] Configurar error handling y loading states
-- [ ] Implementar utilidades para manejo de fechas con date-fns
-- **Herramienta principal**: `edit_file` + `terminal`
-
 ### 9. Crear componentes de Dashboard y formularios CRUD
 - [ ] Diseñar layout principal del dashboard con shadcn/ui
 - [ ] Crear formulario para crear/editar servicios
@@ -155,6 +147,16 @@ Crear un monorepo NX con:
 - **Herramienta principal**: `terminal` + `edit_file`
 - **Commit**: `e012543` - feat: add database migration and dev environment scripts
 - **Documentación**: `docs/iteraciones/tarea_7_iteracion_1.md`
+
+### 8. Configurar tRPC client en Frontend NextJS
+- [x] Instalar dependencias tRPC client y React Query
+- [x] Configurar tRPC provider en app layout
+- [x] Crear hooks personalizados para procedures CRUD
+- [x] Configurar error handling y loading states
+- [x] Implementar utilidades para manejo de fechas con date-fns
+- **Herramienta principal**: `edit_file` + `terminal`
+- **Commit**: `f02641a` - feat: configure trpc client and add date utils
+- **Documentación**: `docs/iteraciones/tarea_8_iteracion_1.md`
 
 ---
 
