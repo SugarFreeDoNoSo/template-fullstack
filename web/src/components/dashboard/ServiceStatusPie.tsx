@@ -1,10 +1,11 @@
 "use client";
+import { memo } from 'react';
 import { useGetServices } from '@/hooks/useServices';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 
 const COLORS = ['#10b981', '#3b82f6', '#ef4444'];
 
-export default function ServiceStatusPie() {
+function ServiceStatusPieComponent() {
   const { data: services = [] } = useGetServices();
   const counts = {
     completed: services.filter((s) => s.status === 'completed').length,
@@ -26,3 +27,5 @@ export default function ServiceStatusPie() {
     </ResponsiveContainer>
   );
 }
+
+export default memo(ServiceStatusPieComponent);

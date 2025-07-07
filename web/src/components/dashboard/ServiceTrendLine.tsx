@@ -1,9 +1,10 @@
 "use client";
+import { memo } from 'react';
 import { useGetServices } from '@/hooks/useServices';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { subDays, format } from 'date-fns';
 
-export default function ServiceTrendLine() {
+function ServiceTrendLineComponent() {
   const { data: services = [] } = useGetServices();
 
   const today = new Date();
@@ -25,3 +26,5 @@ export default function ServiceTrendLine() {
     </ResponsiveContainer>
   );
 }
+
+export default memo(ServiceTrendLineComponent);

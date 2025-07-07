@@ -264,6 +264,7 @@ npm run build:web        # Solo web
 npm test                 # Todos los tests
 npm test shared-types    # Tests de tipos compartidos
 npm test trpc-config     # Tests de tRPC (22 tests)
+npm run e2e             # Tests end-to-end con Playwright
 
 # Linting y formateo
 npm run lint            # ESLint en todo el proyecto

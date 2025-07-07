@@ -9,9 +9,17 @@ import {
 } from '@/components/ui/card';
 import ServiceTable from './ServiceTable';
 import KPIStats from './KPIStats';
-import ServiceStatusPie from './ServiceStatusPie';
-import ServiceStatusBar from './ServiceStatusBar';
-import ServiceTrendLine from './ServiceTrendLine';
+import dynamic from 'next/dynamic';
+
+const ServiceStatusPie = dynamic(() => import('./ServiceStatusPie'), {
+  ssr: false,
+});
+const ServiceStatusBar = dynamic(() => import('./ServiceStatusBar'), {
+  ssr: false,
+});
+const ServiceTrendLine = dynamic(() => import('./ServiceTrendLine'), {
+  ssr: false,
+});
 
 export default function DashboardLayout() {
   return (
