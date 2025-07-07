@@ -1,5 +1,5 @@
 # Multi-stage build for NestJS API
-FROM node:18-alpine AS builder
+FROM node:24.3.0-alpine AS builder
 
 # Set working directory
 WORKDIR /app
@@ -30,7 +30,7 @@ RUN npx nx build trpc-config
 RUN npx nx build api
 
 # Production stage
-FROM node:18-alpine AS production
+FROM node:24.3.0-alpine AS production
 
 # Create app user for security
 RUN addgroup -g 1001 -S nodejs && \

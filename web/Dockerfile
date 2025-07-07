@@ -1,5 +1,5 @@
 # Multi-stage build for NextJS Web Application
-FROM node:18-alpine AS builder
+FROM node:24.3.0-alpine AS builder
 
 # Set working directory
 WORKDIR /app
@@ -34,7 +34,7 @@ ENV NODE_ENV=production
 RUN npx nx build web
 
 # Production stage
-FROM node:18-alpine AS production
+FROM node:24.3.0-alpine AS production
 
 # Install dumb-init for proper signal handling
 RUN apk add --no-cache dumb-init
