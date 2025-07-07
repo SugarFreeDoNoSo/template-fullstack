@@ -163,8 +163,8 @@ cd Prueba-Fullstack
 code .
 # Selecciona "Reopen in Container" cuando aparezca la notificación
 
-# 3. Una vez dentro del container, instala dependencias
-npm install
+# 3. Una vez dentro del container, configura el proyecto
+npm run setup
 
 # 4. Inicia la aplicación
 npm run dev
@@ -174,23 +174,41 @@ npm run dev
 
 ```bash
 # 1. Verifica requisitos
-node --version  # >= 18.x
-npm --version   # >= 9.x
+node --version  # >= 24.3.x
+npm --version   # >= 10.x
 
-# 2. Instala y configura la base de datos
-# Instala PostgreSQL y Redis localmente
-# O usa Docker:
-docker run --name postgres -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres
-docker run --name redis -p 6379:6379 -d redis
+# 2. Clona e instala
+git clone <repository-url>
+cd Prueba-Fullstack
 
-# 3. Clona e instala
+# 3. Configura bases de datos con Docker
+npm run docker:dev
+
+# 4. Configura el proyecto completo
+npm run setup
+
+# 5. Inicia la aplicación
+npm run dev
+```
+
+### Opción 3: Desarrollo Local (Sin Docker)
+
+```bash
+# 1. Instala PostgreSQL y Redis localmente
+# PostgreSQL: https://www.postgresql.org/download/
+# Redis: https://redis.io/download/
+
+# 2. Clona e instala
 git clone <repository-url>
 cd Prueba-Fullstack
 npm install
 
-# 4. Configura variables de entorno
+# 3. Configura variables de entorno
 cp .env.example .env
-# Edita .env con tus configuraciones
+# Edita .env con tus configuraciones locales
+
+# 4. Configura base de datos
+npm run db:reset
 
 # 5. Inicia la aplicación
 npm run dev
@@ -205,8 +223,8 @@ npm run dev
 - **[VS Code](https://code.visualstudio.com/)** con extensión **Dev Containers**
 
 #### Para Instalación Local:
-- **Node.js** >= 18.x ([Download](https://nodejs.org/))
-- **npm** >= 9.x (incluido con Node.js)
+- **Node.js** >= 24.3.x ([Download](https://nodejs.org/))
+- **npm** >= 10.x (incluido con Node.js)
 - **PostgreSQL** >= 13.x ([Download](https://www.postgresql.org/download/))
 - **Redis** >= 6.x ([Download](https://redis.io/download))
 
@@ -248,27 +266,50 @@ docker exec -it postgres createdb -U postgres prueba_fullstack
 ### 📜 Scripts Disponibles
 
 ```bash
-# Desarrollo - Inicia ambas aplicaciones
-npm run dev
+# 🚀 Desarrollo
+npm run dev              # Inicia ambas aplicaciones (API + Web)
+npm run api:dev          # Solo backend (puerto 3001)
+npm run web:dev          # Solo frontend (puerto 3000)
 
-# Desarrollo separado
-npm run dev:api          # Solo backend (puerto 3001)
-npm run dev:web          # Solo frontend (puerto 3000)
+# 🏗️ Build y Producción
+npm run build            # Build completo de ambas aplicaciones
+npm run api:build        # Solo build de API
+npm run web:build        # Solo build de Web
+npm run start            # Inicia en modo producción
+npm run api:start        # Solo API en producción
+npm run web:start        # Solo Web en producción
 
-# Build
-npm run build            # Build completo
-npm run build:api        # Solo API
-npm run build:web        # Solo web
+# 🐳 Docker
+npm run docker:dev       # Levanta bases de datos en Docker
+npm run docker:dev:down  # Detiene contenedores de desarrollo
+npm run docker:prod      # Levanta todo el stack en producción
+npm run docker:prod:down # Detiene contenedores de producción
+npm run docker:prod:build # Construye imágenes de producción
+npm run docker:logs      # Ver logs de contenedores
+npm run docker:restart   # Reinicia contenedores de producción
 
-# Testing
-npm test                 # Todos los tests
-npm test shared-types    # Tests de tipos compartidos
-npm test trpc-config     # Tests de tRPC (22 tests)
-npm run e2e             # Tests end-to-end con Playwright
+# 🗄️ Base de Datos
+npm run db:init          # Inicializa la base de datos
+npm run db:migrate       # Ejecuta migraciones
+npm run db:seed          # Carga datos de prueba
+npm run db:reset         # Resetea completamente la DB
 
-# Linting y formateo
-npm run lint            # ESLint en todo el proyecto
-npm run format          # Prettier en todo el proyecto
+# 🧪 Testing
+npm run test             # Ejecuta todos los tests
+npm run test:watch       # Tests en modo watch
+npm run test:coverage    # Tests con cobertura
+npm run e2e              # Tests end-to-end
+npm run e2e:ui           # Tests E2E con interfaz
+
+# 🔧 Utilidades
+npm run setup            # Configuración inicial completa
+npm run clean            # Limpia node_modules y cache
+npm run lint             # ESLint en todo el proyecto
+npm run lint:fix         # Corrige errores de ESLint
+npm run format           # Prettier en todo el proyecto
+npm run format:check     # Verifica formato sin modificar
+npm run type-check       # Verifica tipos TypeScript
+npm run health           # Verifica conexiones a servicios
 
 # NX utilidades
 npx nx graph            # Visualizar dependencias del proyecto
