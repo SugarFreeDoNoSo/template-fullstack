@@ -32,7 +32,13 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,md}\"",
     "type-check": "nx run-many --targets=type-check --projects=api,web",
-    "health": "bash scripts/check-connections.sh"
+    "health": "bash scripts/check-connections.sh",
+    "task:status": "bash scripts/task-manager.sh status",
+    "task:list": "bash scripts/task-manager.sh list",
+    "task:create": "bash scripts/task-manager.sh create",
+    "task:stats": "bash scripts/task-manager.sh stats",
+    "task:validate": "bash scripts/task-manager.sh validate",
+    "task:help": "bash scripts/task-manager.sh help"
   },
   "devDependencies": {
     "@eslint/compat": "^1.1.1",
