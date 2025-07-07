@@ -5,7 +5,21 @@ import React, { PropsWithChildren, useState } from 'react';
 import { trpc } from './client';
 
 export function TrpcProvider({ children }: PropsWithChildren<{}>) {
-  const [queryClient] = useState(() => new QueryClient());
+  const [queryClient] = useState(
+    () =>
+      new QueryClient({
+        defaultOptions: {
+          queries: {
+            staleTime: 1000 * 5,
+            retry: 1,
+            onError: (err) => console.error('Query error', err),
+          },
+          mutations: {
+            onError: (err) => console.error('Mutation error', err),
+          },
+        },
+      })
+  );
   const [trpcClient] = useState(() =>
     trpc.createClient({
       links: [
